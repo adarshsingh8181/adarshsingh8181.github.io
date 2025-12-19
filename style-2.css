@@ -393,3 +393,36 @@
     transform: scale(1.06);
     cursor: pointer;
 }
+
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
+  .restaurant-list { grid-template-columns: repeat(3, 1fr); }
+  .right .items { gap:12px; }
+  .nav-item a { font-size:15px; }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .restaurant-list { grid-template-columns: repeat(2, 1fr); gap:20px; }
+  .navbar { height:72px; }
+  .navbar .nav { height:72px; }
+  .location-div { display:none; } /* hide location to save space */
+  .right .items li { margin-right:8px; }
+  .container .item-bar .number { font-size:22px; }
+  .footer-content { padding:40px 12px; justify-content:flex-start; gap:12px; }
+  .points { width:45%; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .restaurant-list { grid-template-columns: 1fr; gap:16px; padding-top:18px; }
+  .navbar { height:64px; padding:0 12px; }
+  .navbar .nav { height:64px; }
+  .right .items a span { display:none; } /* show icons only */
+  .nav-item { padding-left:4px; }
+  .place .list-item { padding:14px; }
+  .place:hover .quick-view { position:static; visibility:visible; padding-top:8px; margin-top:8px; }
+  .points { width:100%; margin-left:0; }
+  .points img { margin-left:0; }
+  .container .item-bar::after { top: 74px; }
+}
