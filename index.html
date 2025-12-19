@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Swiggy Clone</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="icon" sizes="192x192"
         href="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_192,h_192/portal/c/logo_2022.png">
   <link rel="stylesheet" href="style-2.css" />
@@ -10,48 +11,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 <body>
-  <div class="main-container">
-    <!-- Navbar -->
-    <header class="navbar">
-      <div class="nav">
-        <div class="left">
-          <a class="logo" href="#">Swiggy</a>
-          <div class="location-div">
-            <span class="other">Other</span>
-            <span class="location">Delhi, India</span>
-            <span class="arrow-down"><i class="fa-solid fa-angle-down"></i></span>
-          </div>
-        </div>
-        <div class="right">
-          <ul class="items">
-            <li><a href="#" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
-            <li><a href="#" class="nav-item"><i class="fa-solid fa-bell"></i> Offers</a></li>
-            <li><a href="#" class="nav-item"><i class="fa-solid fa-question-circle"></i> Help</a></li>
-            <li><a href="#" class="nav-item"><i class="fa-solid fa-user"></i> Sign In</a></li>
-            <li><a href="#" class="nav-item"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
-          </ul>
+  <header class="navbar">
+    <div class="nav">
+      <div class="left">
+        <a class="logo" href="#">Swiggy</a>
+        <div class="location-div">
+          <span class="other">Other</span>
+          <span class="location">Delhi, India</span>
+          <span class="arrow-down"><i class="fa-solid fa-angle-down"></i></span>
         </div>
       </div>
-    </header>
 
-    <!-- Main content -->
-    <main>
-      <section class="restaurants">
-        <div class="container">
-          <div class="item-bar">
-            <div class="number">1066 restaurants</div>
-            <div class="filters">
-              <div class="relevance">Relevance</div>
-              <div class="delivery">Delivery Time</div>
-              <div class="rating">Rating</div>
-              <div class="cost-lh">Cost: Low to High</div>
-            </div>
+      <div class="right">
+        <!-- Desktop nav -->
+        <ul class="items">
+          <li><a href="#" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a></li>
+          <li><a href="#" class="nav-item"><i class="fa-solid fa-bell"></i><span>Offers</span></a></li>
+          <li><a href="#" class="nav-item"><i class="fa-solid fa-question-circle"></i><span>Help</span></a></li>
+          <li><a href="#" class="nav-item"><i class="fa-solid fa-user"></i><span>Sign In</span></a></li>
+          <li><a href="#" class="nav-item"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a></li>
+        </ul>
+
+        <!-- CSS-only mobile menu -->
+        <details class="mobile-details" role="group" aria-label="Site menu">
+          <summary class="mobile-summary" role="button" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </summary>
+
+          <nav class="mobile-menu" role="navigation" aria-label="Mobile menu">
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+              <li><a href="#"><i class="fa-solid fa-bell"></i> Offers</a></li>
+              <li><a href="#"><i class="fa-solid fa-question-circle"></i> Help</a></li>
+              <li><a href="#"><i class="fa-solid fa-user"></i> Sign In</a></li>
+              <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+            </ul>
+          </nav>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="restaurants">
+      <div class="container">
+        <div class="item-bar">
+          <div class="number">1066 restaurants</div>
+          <div class="filters">
+            <div class="relevance">Relevance</div>
+            <div class="delivery">Delivery Time</div>
+            <div class="rating">Rating</div>
+            <div class="cost-lh">Cost: Low to High</div>
           </div>
+        </div>
 
-          <div class="restaurant-list">
+        <div class="restaurant-list">
             
             <div class="place">
               <a class="place-link" href="#">
@@ -141,33 +157,35 @@
 
           </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="points">
-          COMPANY
-          <ul class="footer-ul">
-            <li class="footer-li"><a href="#">About</a></li>
-            <li class="footer-li"><a href="#">Careers</a></li>
-            <li class="footer-li"><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="points">
-          CONTACT
-          <ul class="footer-ul">
-            <li class="footer-li"><a href="#">Help & Support</a></li>
-            <li class="footer-li"><a href="#">Partner with us</a></li>
-          </ul>
-        </div>
-        <div class="points">
-          <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp" height="54" alt="Play" />
-          <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty" height="54" alt="App Store" />
+          <!-- repeat other cards (unchanged) -->
         </div>
       </div>
-    </footer>
-  </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="points">
+        COMPANY
+        <ul class="footer-ul">
+          <li class="footer-li"><a href="#">About</a></li>
+          <li class="footer-li"><a href="#">Careers</a></li>
+          <li class="footer-li"><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="points">
+        CONTACT
+        <ul class="footer-ul">
+          <li class="footer-li"><a href="#">Help & Support</a></li>
+          <li class="footer-li"><a href="#">Partner with us</a></li>
+        </ul>
+      </div>
+      <div class="points">
+        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp" height="54" alt="Play" />
+        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty" height="54" alt="App Store" />
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
