@@ -1,190 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Swiggy Clone</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" sizes="192x192"
-        href="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_192,h_192/portal/c/logo_2022.png">
-  <link rel="stylesheet" href="style-2.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix India – Watch TV Shows Online</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" sizes="192x192" href="https://www.mobiflip.de/wp-content/uploads/2016/06/Netflix_Icon.jpg">
 </head>
 <body>
-  <header class="navbar">
-    <div class="nav">
-      <div class="left">
-        <a class="logo" href="#">Swiggy</a>
-        <div class="location-div">
-          <span class="other">Other</span>
-          <span class="location">Delhi, India</span>
-          <span class="arrow-down"><i class="fa-solid fa-angle-down"></i></span>
-        </div>
-      </div>
 
-      <div class="right">
-        
-        <ul class="items">
-          <li><a href="#" class="nav-item"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a></li>
-          <li><a href="#" class="nav-item"><i class="fa-solid fa-bell"></i><span>Offers</span></a></li>
-          <li><a href="#" class="nav-item"><i class="fa-solid fa-question-circle"></i><span>Help</span></a></li>
-          <li><a href="#" class="nav-item"><i class="fa-solid fa-user"></i><span>Sign In</span></a></li>
-          <li><a href="#" class="nav-item"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a></li>
-        </ul>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" class="logo">
+      <button class="signin-btn">Sign In</button>
+    </nav>
 
-       
-        <details class="mobile-details" role="group" aria-label="Site menu">
-          <summary class="mobile-summary" role="button" aria-expanded="false">
-            <i class="fa-solid fa-bars"></i>
-          </summary>
+    <div class="hero">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <h2>Starts at ₹149. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
 
-          <nav class="mobile-menu" role="navigation" aria-label="Mobile menu">
-            <ul>
-              <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
-              <li><a href="#"><i class="fa-solid fa-bell"></i> Offers</a></li>
-              <li><a href="#"><i class="fa-solid fa-question-circle"></i> Help</a></li>
-              <li><a href="#"><i class="fa-solid fa-user"></i> Sign In</a></li>
-              <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
-            </ul>
-          </nav>
-        </details>
+      <div class="email-box">
+        <input type="email" placeholder="Email address">
+        <button>Get Started &gt;</button>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="restaurants">
-      <div class="container">
-        <div class="item-bar">
-          <div class="number">1066 restaurants</div>
-          <div class="filters">
-            <div class="relevance">Relevance</div>
-            <div class="delivery">Delivery Time</div>
-            <div class="rating">Rating</div>
-            <div class="cost-lh">Cost: Low to High</div>
-          </div>
-        </div>
-
-        <div class="restaurant-list">
-            
-            <div class="place">
-              <a class="place-link" href="#">
-                <div class="list-item">
-                  <div class="item-content">
-                    <div class="top-img">
-                      <img alt="La Pino'z Pizza" src="https://mir-s3-cdn-cf.behance.net/projects/404/1907d9179484981.65107855b92c1.jpg" width="254" height="160" />
-                    </div>
-                    <div class="place-name-div">
-                      <div class="name">La Pino'z Pizza</div>
-                      <div class="food-items">Italian, Pizzas, Desserts</div>
-                    </div>
-                    <div class="info-div">
-                      <div class="rating"><i class="fa-solid fa-star"></i> 3.8</div>
-                      <div class="time">• 42 MINS</div>
-                      <div class="price">• ₹250 FOR TWO</div>
-                    </div>
-                    <div class="offer-div"><i class="fa-solid fa-tag"></i> 50% off | Use WELCOME50</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="place">
-              <a class="place-link" href="#">
-                <div class="list-item">
-                  <div class="item-content">
-                    <div class="top-img">
-                      <img alt="Bercos" src="https://imgmediagumlet.lbb.in/media/2020/09/5f71a92108a92543c001c569_1601284385456.jpg" width="254" height="160" />
-                    </div>
-                    <div class="place-name-div">
-                      <div class="name">Bercos</div>
-                      <div class="food-items">Chinese, Thai, Asian</div>
-                    </div>
-                    <div class="info-div">
-                      <div class="rating"><i class="fa-solid fa-star"></i> 4.0</div>
-                      <div class="time">• 33 MINS</div>
-                      <div class="price">• ₹500 FOR TWO</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            
-            <div class="place">
-              <a class="place-link" href="#">
-                <div class="list-item">
-                  <div class="item-content">
-                    <div class="top-img">
-                      <img alt="Wack Waffles" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8UD3HxWXw0HddFJ0Iw7OzH4OxxRFmINUfZQ&s" width="254" height="160" />
-                    </div>
-                    <div class="place-name-div">
-                      <div class="name">Wack Waffles & Brownies</div>
-                      <div class="food-items">Waffle, Bakery, Desserts</div>
-                    </div>
-                    <div class="info-div">
-                      <div class="rating"><i class="fa-solid fa-star"></i> 3.9</div>
-                      <div class="time">• 34 MINS</div>
-                      <div class="price">• ₹250 FOR TWO</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            
-            <div class="place">
-              <a class="place-link" href="#">
-                <div class="list-item">
-                  <div class="item-content">
-                    <div class="top-img">
-                      <img alt="Takeout Cafe" src="https://b.zmtcdn.com/data/pictures/chains/3/20150713/79be90939f0f1a39b33adbdd06552fbf.jpg?fit=around|960:500&crop=960:500;*,*" width="254" height="160" />
-                    </div>
-                    <div class="place-name-div">
-                      <div class="name">Takeout Cafe</div>
-                      <div class="food-items">Fast Food, Snacks, Beverages</div>
-                    </div>
-                    <div class="info-div">
-                      <div class="rating"><i class="fa-solid fa-star"></i> 5.0</div>
-                      <div class="time">• 39 MINS</div>
-                      <div class="price">• ₹200 FOR TWO</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-          
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="points">
-        COMPANY
-        <ul class="footer-ul">
-          <li class="footer-li"><a href="#">About</a></li>
-          <li class="footer-li"><a href="#">Careers</a></li>
-          <li class="footer-li"><a href="#">Blog</a></li>
-        </ul>
-      </div>
-      <div class="points">
-        CONTACT
-        <ul class="footer-ul">
-          <li class="footer-li"><a href="#">Help & Support</a></li>
-          <li class="footer-li"><a href="#">Partner with us</a></li>
-        </ul>
-      </div>
-      <div class="points">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5LOPUgzjbz_m4aVulC-GU5zu-30HBdYnAg&s" height="54" alt="Play" />
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1UJJvMKvoUSrzStIkk6WurEroTWegjI3kLQ&s" height="54" alt="App Store" />
-      </div>
+  <!-- TRENDING -->
+  <section class="section">
+    <h2>Trending Now</h2>
+    <div class="card-row">
+      <div class="card">
+        <img src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/8e95aca5-8f48-4678-b204-4b2af3f4c452/STARNGER+THINGS+5+Trailer+and+Poster+Teases+The+Final+Epic+Battle+and+%2522One+Last+Adventure%2522.jpg" alt="img1"></div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BZTVlYTJhNWQtZDdhMS00MjRhLWI3YWEtMDRkN2FhNTc3MWZlXkEyXkFqcGc@._V1_.jpg" alt="img2"></div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIgwqaLAU6vAwssEyJme7WlgIiYkkRXwNgPQ&s" alt="img3"></div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BYTkxNTNhYjktMTcxNy00OTA5LThlY2ItZjM3YTFjYmQ1ZmYzXkEyXkFqcGc@._V1_.jpg" alt="img4"></div>
     </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features">
+    <div class="feature">
+      <h3>Enjoy on your TV</h3>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV and more.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Download your shows</h3>
+      <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Watch everywhere</h3>
+      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Create profiles for kids</h3>
+      <p>Send kids on adventures with their favorite characters.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>What is Netflix?</summary>
+      <p>Netflix is a streaming service offering movies and TV shows.</p>
+    </details>
+
+    <details>
+      <summary>How much does Netflix cost?</summary>
+      <p>Plans range from ₹149 to ₹649 per month.</p>
+    </details>
+
+    <details>
+      <summary>Where can I watch?</summary>
+      <p>Watch anywhere, anytime on unlimited devices.</p>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Questions? Call 000-800-919-1694</p>
+
+    <div class="footer-links">
+      <a href="#">FAQ</a>
+      <a href="#">Help Centre</a>
+      <a href="#">Account</a>
+      <a href="#">Media Centre</a>
+      <a href="#">Investor Relations</a>
+      <a href="#">Jobs</a>
+      <a href="#">Ways to Watch</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy</a>
+    </div>
+
+    <p class="country">Netflix India</p>
   </footer>
+
 </body>
 </html>
